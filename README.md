@@ -1,0 +1,2 @@
+# SparkPoc
+Trying Apache Spark
