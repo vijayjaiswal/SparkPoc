@@ -22,7 +22,10 @@ public class CountService {
     JavaSparkContext sc;
 
     public Map<String, Long> count() {
-        String input = "hello world hello hello hello";
+        String input = "Peter Piper picked a peck of pickled peppers " +
+                "A peck of pickled peppers Peter Piper picked " +
+                "If Peter Piper picked a peck of pickled peppers " +
+                "Where’s the peck of pickled peppers Peter Piper picked";
         String[] _words = input.split(" ");
         List<String> wordList = Arrays.stream(_words).map(String::new).collect(Collectors.toList());
 
