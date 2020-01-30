@@ -31,7 +31,8 @@ public class ApplicationConfig {
         SparkConf sparkConf = new SparkConf()
                 .setAppName(appName)
                 .setSparkHome(sparkHome)
-                .setMaster(masterUri);
+                .setMaster(masterUri)
+                .set("spark.sql.warehouse.dir", "file:///c:/tmp/spark-warehouse");
 
         return sparkConf;
     }
